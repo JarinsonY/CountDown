@@ -5,12 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>CountDown | Jarinson Palacios</title>
 </head>
 
 <body>
-    <h1 id="count"></h1>
-    <script src="countdown.js"></script>
+    <div class="main">
+
+        <div class="header">
+            <div class="logo">
+                <h1>Count<b>Down</b></h1>
+            </div>
+            <p class="message"><b>By:</b> JarinsonPalacios</p>
+        </div>
+
+        <div class="count" id="count">
+            <div class="block">
+                <div class="days" id="days">00</div>
+                <p>DAYS</p>
+            </div>
+            <div class="block">
+                <div class="hours" id="hours">00</div>
+                <p>HOURS</p>
+            </div>
+            <div class="block">
+                <div class="minutes" id="minutes">00</div>
+                <p>MINUTES</p>
+            </div>
+            <div class="block">
+                <div class="seconds" id="seconds">00</div>
+                <p>SECONDS</p>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.github.com/JarinsonY" target="_blank" class="btn-social-media"><i class="fab fa-github"></i></a>
+            <a href="https://www.twitter.com/Jarinson_P" target="_blank" class="btn-social-media"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <script src="countdown.js"></script>
+        <script src="https://kit.fontawesome.com/03270b8eb0.js" crossorigin="anonymous"></script>
+    </div>
 </body>
 
 </html>

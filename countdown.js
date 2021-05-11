@@ -9,18 +9,30 @@ const getRemainTime = (deadline) => {
     return { remainTime, remainSeconds, remainMinutes, remainHours, remainDays }
 };
 
-const coundown = (deadline, element, finalMessage) => {
+const countdown = (deadline, element, finalMessage) => {
     const elem = document.getElementById(element);
+
+    const d = document.getElementById('days');
+    const h = document.getElementById('hours');
+    const m = document.getElementById('minutes');
+    const s = document.getElementById('seconds');
+    const count = document.getElementById('count');
 
     const timerUpdate = setInterval(() => {
         let time = getRemainTime(deadline);
-        elem.innerHTML = `${time.remainDays}d:${time.remainHours}h:${time.remainMinutes}m:${time.remainSeconds}s`
+        /* elem.innerHTML = `${time.remainDays}d:${time.remainHours}h:${time.remainMinutes}m:${time.remainSeconds}s` */
+        d.innerHTML = time.remainDays
+        h.innerHTML = time.remainHours
+        m.innerHTML = time.remainMinutes
+        s.innerHTML = time.remainSeconds
 
         if (time.remainTime <= 1) {
             clearInterval(timerUpdate)
+            /* count.style.display = 'none' */
             elem.innerHTML = finalMessage
+            console.log(finalMessage)
         }
     }, 1000)
 }
 
-coundown('May 10 2021 21:38:00 GMT-0500', 'count', 'Feliz Día!')
+countdown('May 11 2021 03:23:40 GMT-0500', 'count', 'Countdown Finalized!')
