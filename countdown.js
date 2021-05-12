@@ -35,4 +35,4 @@ const countdown = (deadline, element, finalMessage) => {
     }, 1000)
 }
 
-countdown('May 11 2021 03:23:40 GMT-0500', 'count', 'Countdown Finalized!')
+countdown('May 11 2021 20:00:00 GMT-0500', 'count', 'Countdown Finalized!')
