@@ -1,3 +1,19 @@
+const starting = document.getElementById('starting')
+const count = document.getElementById('count')
+const datePicker = document.getElementById('fecha')
+
+function getDateCountdown() {
+    count.style.display = 'none'
+}
+
+datePicker.addEventListener('change', (e) => {
+    const newDate = e.target.value
+
+    countdown(newDate, 'count', 'Your Countdown is over!')
+    starting.style.display = 'none'
+    count.style.display = ''
+})
+
 const getRemainTime = (deadline) => {
     let now = new Date();
     let remainTime = (new Date(deadline) - now + 1000) / 1000;
@@ -16,7 +32,6 @@ const countdown = (deadline, element, finalMessage) => {
     const h = document.getElementById('hours');
     const m = document.getElementById('minutes');
     const s = document.getElementById('seconds');
-    const count = document.getElementById('count');
 
     const timerUpdate = setInterval(() => {
         let time = getRemainTime(deadline);
@@ -28,11 +43,11 @@ const countdown = (deadline, element, finalMessage) => {
 
         if (time.remainTime <= 1) {
             clearInterval(timerUpdate)
-            /* count.style.display = 'none' */
             elem.innerHTML = finalMessage
-            console.log(finalMessage)
+            elem.className += ' finalized'
+            console.log('Countdown Finalized!')
         }
     }, 1000)
 }
 
-countdown('May 11 2021 20:00:00 GMT-0500', 'count', 'Countdown Finalized!')
+//countdown('May 12 2021 20:00:00 GMT-0500', 'count', 'Countdown Finalized!')

@@ -10,7 +10,7 @@
     <title>CountDown | Jarinson Palacios</title>
 </head>
 
-<body>
+<body onload="getDateCountdown()">
     <div class="main">
 
         <div class="header">
@@ -38,6 +38,12 @@
                 <p>SECONDS</p>
             </div>
         </div>
+        
+        <div class="starting" id="starting">
+            <p>Choose a date to start the countdown</p>
+            <input type="datetime-local" id="fecha">
+        </div>
+        
 
         <div class="social-media">
             <a href="https://www.github.com/JarinsonY" target="_blank" class="btn-social-media"><i class="fab fa-github"></i></a>

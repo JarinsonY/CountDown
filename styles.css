@@ -104,9 +104,36 @@ body {
     box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.15);
 }
 
+.starting {
+    margin: 10px 0;
+}
+
+.starting,
+input {
+    color: #3b8ada;
+    font-weight: 500;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #3b8ada;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    height: calc(1.5em + 0.75rem + 2px);
+    margin: 10px 0;
+    padding: 0.375rem 0.75rem;
+    transition: 0.5s ease all;
+}
+
+.finalized{
+    color: #3b8ada;
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
 /* Responsive Desing - Adaptable a Dispositivos Móviles */
 
-@media screen and (max-width: 493px){
+@media screen and (max-width: 493px) {
     .main {
         min-height: auto;
     }
