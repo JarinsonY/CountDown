@@ -3,7 +3,7 @@
 _Este Countdown es un proyecto para aplicar conocimientos adquiridos._
 
 
-<p align="center"><img height="500" src="https://imgbox.es/images/2021/05/12/CountDown-_-Jarinson-Palacios779d9333b488abd5.jpg"/></p>
+<p align="center"><img height="500" src="https://i.ibb.co/hXjLgJ5/Count-Down-Jarinson-Palacios.jpg"/></p>
 
 
 ## Demo 🚀
@@ -11,10 +11,10 @@ _Este Countdown es un proyecto para aplicar conocimientos adquiridos._
 _A continuación, te brindo un enlace en el que podrás visualizar la demostración del proyecto hasta la actualidad._
 
 Mira la **Demo** en:
-[CountDown | JarinsonPalacios](https://jarinsony.github.io/CountDown/) - Demo del proyecto
+[CountDown | JarinsonPalacios](https://jarinsony.github.io/CountDown/)
 
 
-### Pre-requisitos 📋 ⚙️
+### Como usarlo 📋 ⚙️
 
 Para probar el countdown inicialmente deberá el usuario esoger una fecha, por medio del selector de fecha, para iniciar la cuenta regresiva y al momento de finalizar se le mostrará un mensaje: _Your Countdown is over!_.
 

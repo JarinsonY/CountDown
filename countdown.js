@@ -2,6 +2,8 @@ const starting = document.getElementById('starting')
 const count = document.getElementById('count')
 const datePicker = document.getElementById('fecha')
 
+var timer = new Audio('./assets/Timer.mp3')
+
 function getDateCountdown() {
     count.style.display = 'none'
 }
@@ -45,6 +47,7 @@ const countdown = (deadline, element, finalMessage) => {
             clearInterval(timerUpdate)
             elem.innerHTML = finalMessage
             elem.className += ' finalized'
+            timer.play()
             console.log('Countdown Finalized!')
         }
     }, 1000)
